@@ -1,5 +1,5 @@
 module.exports = {
-	publicPath: './',
+	publicPath: 'vuetify-snackbar/dist/',
 	outputDir: 'dist',
 	assetsDir: 'assets',
 	indexPath: 'index.html',
