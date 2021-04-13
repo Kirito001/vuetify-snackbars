@@ -5,7 +5,13 @@
     "private": false,
     "license": "MIT",
     "description": "基于vuetify组件封装的以js驱动的消息条插件",
-    "keywords": ["snackbar", "vue-snackbar", "v-snackbar", "vuetify-snackbar", "消息条"],
+    "keywords": [
+        "snackbar",
+        "vue-snackbar",
+        "v-snackbar",
+        "vuetify-snackbar",
+        "消息条"
+    ],
     "main": "index.js",
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -16,6 +22,7 @@
         "core-js": "^3.6.5",
         "v-snackbar": "^1.0.3",
         "vue": "^2.6.11",
+        "vue-router": "^3.5.1",
         "vuetify": "^2.4.0"
     },
     "devDependencies": {
