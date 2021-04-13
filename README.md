@@ -1,16 +1,11 @@
 # vuetify-snackbars
 基于vuetify组件封装的以js驱动的消息条插件
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
+## 安装
 ```
-npm run serve
+npm i vuetify-snackbars
 ```
+[前往 npm 查看](https://www.npmjs.com/package/vuetify-snackbars)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Preview
+[在线文档地址](https://kirito001.github.io/vuetify-snackbars/dist/#/)
