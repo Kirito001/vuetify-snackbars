@@ -86,7 +86,7 @@
                     <v-alert class="pl-8" border="left" color="grey" style="font-family: none;" colored-border text>
                         <span class="text--disabled">// main.js</span><br/>
                         import<span class="orange--text mx-3">Vue</span>from<span class="red--text mx-3">'vue'</span><br/>
-                        import<span class="orange--text mx-3">snackbar</span>from<span class="red--text mx-3">'./plugins/snackbar'</span><br/><br/>
+                        import<span class="orange--text mx-3">snackbar</span>from<span class="red--text mx-3">'vuetify-snackbars'</span><br/><br/>
                         Vue.<span class="orange--text">use</span>(<span class="red--text">snackbar</span>)
                     </v-alert>
 
