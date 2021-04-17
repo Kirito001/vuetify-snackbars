@@ -15,6 +15,7 @@
         :light="props[0].light"
         :dark="props[0].dark"
         :transition="props[0].transition"
+        :text="props[0].text"
     >
         <span id="snackbarContent">{{ content[0] }}</span>
         <template v-slot:action="{ attrs }">
@@ -24,16 +25,31 @@
                 @click="show = false"
                 v-show="!props[0].iconClose&&!props[0].hideActions"
                 text
-            > 关闭 </v-btn>
-            <v-btn
-                :color="props[0].color?'':'#bb86fc'"
-                v-bind="attrs"
-                @click="show = false"
-                v-show="props[0].iconClose"
-                icon
             >
-                <v-icon size="20">mdi-close</v-icon>
+                <v-chip
+                    :color="props[0].color?'':'#bb86fc'"
+                    class="px-2 mr-2"
+                    v-text="queue-1"
+                    v-show="queue>1"
+                    small
+                    label
+                ></v-chip>
+                {{ queue > 1 ? '下一条':'关闭' }}
             </v-btn>
+            <v-badge
+                :color="props[0].color?'':'#bb86fc'"
+                :content="queue-1" :value="queue-1>0"
+                v-show="props[0].iconClose"
+            >
+                <v-btn
+                    :color="props[0].color?'':'#bb86fc'"
+                    v-bind="attrs"
+                    @click="show = false"
+                    icon
+                >
+                    <v-icon size="20">mdi-close</v-icon>
+                </v-btn>
+            </v-badge>
         </template>
     </v-snackbar>
 </template>
@@ -63,6 +79,7 @@ export default {
                 hideActions: false,
                 transition: 'v-snack-transition',
                 iconClose: false,
+                text: false,
                 timeout: 5000
             }
         }

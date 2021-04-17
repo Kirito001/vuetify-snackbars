@@ -52,6 +52,7 @@
 					<br/>
 					<v-btn class="mr-3 mb-3" color="brown" @click="$snackbar({content: 'this.$snackbar({ hideActions: true })', hideActions: true})" dark>无操作消息条</v-btn>
 					<v-btn class="mr-3 mb-3" color="brown" @click="$snackbar({content: 'this.$snackbar({ iconClose: true })', iconClose: true})" dark>图标关闭消息条</v-btn>
+					<v-btn class="mr-3 mb-3" color="brown" @click="$snackbar({content: 'this.$snackbar({ color: `primary`, text: true })', text: true, color: 'primary'})" dark>低透明度消息条</v-btn>
 
 					<h5 class="text-h5 my-4">薄边框消息条</h5>
 					light：
@@ -86,7 +87,7 @@
                     <v-alert class="pl-8" border="left" color="grey" style="font-family: none;" colored-border text>
                         <span class="text--disabled">// main.js</span><br/>
                         import<span class="orange--text mx-3">Vue</span>from<span class="red--text mx-3">'vue'</span><br/>
-                        import<span class="orange--text mx-3">snackbar</span>from<span class="red--text mx-3">'./plugins-snackbars'</span><br/><br/>
+                        import<span class="orange--text mx-3">snackbar</span>from<span class="red--text mx-3">'vuetify-snackbars'</span><br/><br/>
                         Vue.<span class="orange--text">use</span>(<span class="red--text">snackbar</span>)
                     </v-alert>
 
