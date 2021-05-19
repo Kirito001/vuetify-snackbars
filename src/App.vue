@@ -81,7 +81,7 @@
                     <h5 class="text-h5 mt-10 mb-5">安装</h5>
 
                     <v-alert class="pl-8" border="left" color="grey" style="font-family: none;" colored-border text>
-                        npm<span class="orange--text mx-3">i</span>v-snackbar
+                        npm<span class="orange--text mx-3">i</span>vuetify-snackbar
                     </v-alert>
 
                     <v-alert class="pl-8" border="left" color="grey" style="font-family: none;" colored-border text>
