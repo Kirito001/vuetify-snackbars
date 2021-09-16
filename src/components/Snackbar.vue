@@ -122,15 +122,15 @@ export default {
     watch: {
         show(val) {
             if(!val) {
-                this.queue--
                 let t = this.props[0].transition || 'v-snack-transition'
-                if(this.queue > 0) {
-                    setTimeout(() => {
+                setTimeout(() => {
+                    this.queue--
+                    if(this.queue > 0) {
                         this.content.splice(0, 1)
                         this.props.splice(0, 1)
                         this.show = true
-                    }, t=='v-snack-transition'?200:400);
-                }
+                    }
+                }, t=='v-snack-transition'?200:400);
             }
         }
     }
